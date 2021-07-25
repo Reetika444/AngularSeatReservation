@@ -1,0 +1,59 @@
+<!-- <p class="text-danger">
+  tickets works!
+</p> -->
+
+
+
+
+<div class="container bg-img" style=" max-width: 1000px;margin-top: 50px;height: 500px;">
+ 
+  <div style="text-align:center;" >
+
+    <h1>TRAIN RESERVATION SYSTEM</h1>
+    <br> 
+    <br>
+    </div>
+  <form style="text-align:center" (ngSubmit)="inserticket()">
+    <div class="form-group" style="text-align:center">
+      <label class="col-sm-12 " >Number of Available Seats</label>
+      <input type="text"  style="width:90px;" name="availableseats" [(ngModel)]="availableseats">
+    </div> 
+    <div class="form-group" style="text-align:center">
+      <label class="col-sm-12 " >Number of Already Booked Seats</label>
+      <input type="text"  style="width:90px;" name="alreadyBooked" [(ngModel)]="alreadyBooked">
+    </div> 
+
+    
+    
+  <div class="form-group" style="text-align:center">
+    <label class="col-sm-12 " >Required Number Of Seats</label>
+    <input type="text"  style="width:90px;" name="seatstobebooked" [(ngModel)]="ticket.seatstobebooked">
+  </div> 
+  <div style="margin-bottom:50px;">
+    <button  style="text-align:center" class="btn btn-primary">Book Seats</button>
+  </div>
+  <label style="color:white;">Seats numbers that have been booked</label>
+  <label style="color:white;">{{bookedTicketArray}}</label>
+  </form>
+<!-- <table class="table"> -->
+  <!-- <thead> -->
+    <!-- <tr> -->
+     
+      <!-- <th scope="col">Id</th>
+      <th scope="col">Seats To Be Displayed</th> -->
+      <!-- <th>Seats numbers that have been booked</th> -->
+      
+    <!-- </tr> -->
+  <!-- </thead> -->
+  <!-- <tbody> -->
+    <!-- <tr *ngFor="let obj of dataArr"> -->
+      <!-- <tr> -->
+      
+      <!-- <td>{{obj.id}}</td>
+      <td>{{obj.seatstobebooked}}</td> -->
+      <!-- <td>{{bookedTicketArray}}</td> -->
+    <!-- </tr> -->
+   
+  <!-- </tbody> -->
+<!-- </table> -->
+</div>
